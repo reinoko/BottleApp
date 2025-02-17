@@ -1,0 +1,50 @@
+/*html, body, #app, #app>div {
+  height: 100%
+}
+html 
+{
+ overflow: auto;
+}
+*/ 
+/*
+html, body, div, iframe .yom
+{
+ margin: 0px; 
+ padding: 0px; 
+ height: 100%; 
+ border: none;
+}
+*/
+/*
+html, body, #app, #app>div {
+  height: 100%
+}
+*/
+iframe 
+{
+ display: block; 
+ width: 100%; 
+ border: none; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "bottle drank ."
+    "bottle dunk ."
+    "bottle . .";
+}
+
+.bottle { grid-area: bottle; }
+
+.drank { grid-area: drank; }
+
+.dunk { grid-area: dunk; }
+
+
+
