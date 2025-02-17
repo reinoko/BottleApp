@@ -14,8 +14,10 @@ const handleClick = () => {
     setCount(count() + 1);
     console.log("Button clicked!");
     const elem = document.getElementById("level");
-    elem.setAttribute("height", "153");
-    elem.setAttribute("y","48")
+    //const data = await (await fetch('http://192.168.21.240/LED=OFF'));
+    const data = "2.66"
+    elem.setAttribute("height", -11.128(data)+182.6);
+    elem.setAttribute("y",10.898(data)+19.012)
   };
 
 
@@ -73,6 +75,7 @@ const handleClick = () => {
   </g>
 </svg>
 <button onClick={handleClick}>Click me!</button>
+<p>You've drunk _ mL of water today!</p>
 
       </Card.Body>
     </Card>
@@ -86,11 +89,9 @@ const handleClick = () => {
     >
       <Card.Header>Header</Card.Header>
       <Card.Body>
-        <Card.Title>Card Title </Card.Title>
+        <Card.Title>Recommended Water Intake</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up
-          the bulk of the card's content.
-        </Card.Text>
+          THe recommended water intake for a person is 2L of water per day!        </Card.Text>
       </Card.Body>
     </Card>
   </div>
@@ -103,11 +104,9 @@ const handleClick = () => {
     >
       <Card.Header>Header</Card.Header>
       <Card.Body>
-        <Card.Title>Card Title </Card.Title>
+        <Card.Title>You have a remaining 1.8L of water to drink today</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up
-          the bulk of the card's content.
-        </Card.Text>
+          Drink another 3 bottles of water.        </Card.Text>
       </Card.Body>
     </Card>
   </div>
